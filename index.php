@@ -1,25 +1,21 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8>">
+        <title> formulario de incrição</title>
+        <meta name="author" content="">
+        <meta name="description" content = "">
+        <meta name="vlowport" content="width=device.widdth, initial.scale=1">
+    </head>
 
-$categorias = [];
-$categorias[] = 'infantil';
-$categorias[] = 'adolescentes';
-$categorias[] = 'adulto';
+    <body>
+        <p> FORMULÁRIO DE INSCRIÇÃO DE COMPETIDORES</p>
 
-$nome = 'Eduardo';
-$idade = 18;
+        <form action ="script.php" method="post">
+            <p>Seu nome: <input type="text" name="nome" /></p>
+            <p>Sua idade: <input type="text" name="idade"/></p>
+            <p><input type="submit" value="Enviar dados do competidor"/></p>
+        </form>
 
-//var_dump($nome);
-//var_dump($idade);
-
-if($idade>=6 && $idade <=12)
-{
-    echo 'infantil';
-}
-else if($idade >= 13 && $idade<=18)
-{
-    echo '<h1>adolescente</h1>';
-}
-else
-{
-     echo 'adulto';
-}
+    </body>
+</html>
